@@ -49,7 +49,7 @@ class ReceiveVideo(Thread):
             
             cv2.imshow('Server Receiving..,',frame)
             if cv2.waitKey(10) == ord('q'):
-                client.close()
+                server.close()
             
 StreamVideo().start()
 ReceiveVideo().start()
